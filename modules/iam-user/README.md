@@ -26,7 +26,7 @@ This module outputs commands and PGP messages which can be decrypted either usin
 | create\_iam\_access\_key | Whether to create IAM access key | bool | `"true"` | no |
 | create\_iam\_user\_login\_profile | Whether to create IAM user login profile | bool | `"true"` | no |
 | create\_user | Whether to create the IAM user | bool | `"true"` | no |
-| force\_destroy | When destroying this user, destroy even if it has non-Terraform-managed IAM access keys, login profile or MFA devices. Without force_destroy a user with non-Terraform-managed access keys and login profile will fail to be destroyed. | bool | `"false"` | no |
+| force\_destroy | When destroying this user, destroy even if it has non-Terraform-managed IAM access keys, login profile or MFA devices. Without force\_destroy a user with non-Terraform-managed access keys and login profile will fail to be destroyed. | bool | `"false"` | no |
 | name | Desired name for the IAM user | string | n/a | yes |
 | password\_length | The length of the generated password | number | `"20"` | no |
 | password\_reset\_required | Whether the user should be forced to reset the generated password on first login. | bool | `"true"` | no |
@@ -46,7 +46,7 @@ This module outputs commands and PGP messages which can be decrypted either usin
 | keybase\_password\_pgp\_message |  |
 | keybase\_secret\_key\_decrypt\_command |  |
 | keybase\_secret\_key\_pgp\_message |  |
-| pgp\_key | PGP key used to encrypt sensitive data for this user (if empty - secrets are not encrypted) |
+| pgp\_key | PGP key used to encrypt sensitive data for this user \(if empty - secrets are not encrypted\) |
 | this\_iam\_access\_key\_encrypted\_secret | The encrypted secret, base64 encoded |
 | this\_iam\_access\_key\_id | The access key ID |
 | this\_iam\_access\_key\_key\_fingerprint | The fingerprint of the PGP key used to encrypt the secret |

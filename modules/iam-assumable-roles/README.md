@@ -19,7 +19,7 @@ Trusted resources can be any [IAM ARNs](https://docs.aws.amazon.com/IAM/latest/U
 | create\_poweruser\_role | Whether to create poweruser role | bool | `"false"` | no |
 | create\_readonly\_role | Whether to create readonly role | bool | `"false"` | no |
 | max\_session\_duration | Maximum CLI/API session duration in seconds between 3600 and 43200 | number | `"3600"` | no |
-| mfa\_age | Max age of valid MFA (in seconds) for roles which require MFA | number | `"86400"` | no |
+| mfa\_age | Max age of valid MFA \(in seconds\) for roles which require MFA | number | `"86400"` | no |
 | poweruser\_role\_name | IAM role with poweruser access | string | `"poweruser"` | no |
 | poweruser\_role\_path | Path of poweruser IAM role | string | `"/"` | no |
 | poweruser\_role\_permissions\_boundary\_arn | Permissions boundary ARN to use for poweruser role | string | `""` | no |
